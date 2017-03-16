@@ -1,7 +1,5 @@
 #!/bin/sh
 
-set -e
-
 # Install docker
 curl -sSL https://get.docker.com/ | sh
 
