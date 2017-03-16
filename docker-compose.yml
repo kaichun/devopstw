@@ -14,13 +14,13 @@ services:
 #      - /usr/tw/asset:/usr/share/nginx/html
     ports:
       - "8081:80"
-  nexus: 
-    image: kaichun/nexus_tw
-    container_name: nexus_tw
-    ports: 
-      - "8082:8081" 
-  jenkins: 
-    image: kaichun/jenkins_tw
-    container_name: jenkins_tw
-    ports: 
-      - "8083:8080"
+#  nexus: 
+#    image: kaichun/nexus_tw
+#    container_name: nexus_tw
+#    ports: 
+#      - "8082:8081" 
+#  jenkins: 
+#    image: kaichun/jenkins_tw
+#    container_name: jenkins_tw
+#    ports: 
+#      - "8083:8080"
