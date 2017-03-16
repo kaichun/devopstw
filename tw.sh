@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Docker installation
 ## -sSL https://get.docker.com/ | sh
 
