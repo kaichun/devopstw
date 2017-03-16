@@ -6,16 +6,23 @@
 # Grant execute permission
 ##chmod +x /usr/local/bin/docker-compose
 # Prepare local storage for mapping
-cd /usr
-mkdir tw
-cd tw
-mkdir app
-mkdir asset
-cd app
-##wget [app.war]
-cd ../asset
-##wget [asset.zip]
-##unzip asset.zip
-cd /usr/tw
+
+prepareFoler()
+
+function prepareFolder()
+{
+  cd /usr
+  mkdir tw
+  cd tw
+  mkdir app
+  mkdir asset
+  cd app
+  ##wget [app.war]
+  cd ../asset
+  ##wget [asset.zip]
+  ##unzip asset.zip
+  cd /usr/tw
+}
+
 # Get docker compose and run
 curl -k -L https://raw.githubusercontent.com/kaichun/devopstw/master/Docker-Compose-TW-Enablement.sh | bash
