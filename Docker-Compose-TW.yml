@@ -1,12 +1,12 @@
 version: '2'
-services: 
-  tomcat: 
+services:
+  tomcat:
     image: kaichun/tomcat_tw
     depends_on: nginx
     container_name: tomcat_tw
     volumes:
       - /usr/tw/app:/usr/local/tomcat/webapps
-    ports: 
+    ports:
       - "8080:8080"
   nginx:
     image: kaichun/nginx_tw
