@@ -1,3 +1,3 @@
 #!/bin/bash
-wget https://raw.githubusercontent.com/kaichun/gdcdevops/master/Docker-Compose-TW.yml --no-check-certificate
+wget https://raw.githubusercontent.com/kaichun/devopstw/master/Docker-Compose-TW.yml --no-check-certificate
 docker-compose up -d
