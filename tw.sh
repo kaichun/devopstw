@@ -1,11 +1,30 @@
 #!/bin/sh
-cd ~
+
+# Prepare application
+prepare_folders() {
+
 mkdir -p /usr/tw/
-cd /usr/tw/
-mkdir app/
-mkdir asset/
-cd app/
-cd ../asset/
-cd /usr/tw/
-# Get docker compose and run
-curl -k -L https://raw.githubusercontent.com/kaichun/devopstw/master/Docker-Compose-TW-Enablement.sh | sh
+mkdir -p /usr/tw/asset/
+mkdir -p /usr/tw/app/
+
+WORKING_DIR="/usr/tw/"
+
+#get app package
+#get assets
+
+cd "$WORKING_DIR"
+}
+
+prepare_folders
+
+# Start docker compose
+start_docker_compose(){
+wget=/usr/bin/wget
+WORKING_DIR="/usr/tw"
+
+cd $WORKING_DIR
+$wget https://raw.githubusercontent.com/kaichun/devopstw/master/docker-compose.yml --no-check-certificate
+docker-compose up -d
+}
+
+start_docker_compose
