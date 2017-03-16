@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Install docker
-curl -sSL https://get.docker.com/ | sh
+wget -qO- https://get.docker.com/ | sh
 
 # Install docker compose
 curl -L https://github.com/docker/compose/releases/download/1.7.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
