@@ -6,9 +6,7 @@
 # Grant execute permission
 ##chmod +x /usr/local/bin/docker-compose
 # Prepare local storage for mapping
-
-prepareFoler()
-
+prepareFoler
 function prepareFolder()
 {
   cd /usr
@@ -23,6 +21,5 @@ function prepareFolder()
   ##unzip asset.zip
   cd /usr/tw
 }
-
 # Get docker compose and run
 curl -k -L https://raw.githubusercontent.com/kaichun/devopstw/master/Docker-Compose-TW-Enablement.sh | bash
