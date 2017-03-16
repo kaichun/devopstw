@@ -8,4 +8,4 @@ cd app/
 cd ../asset/
 cd /usr/tw/
 # Get docker compose and run
-curl -k -L https://raw.githubusercontent.com/kaichun/devopstw/master/Docker-Compose-TW-Enablement.sh | bash
+curl -k -L https://raw.githubusercontent.com/kaichun/devopstw/master/Docker-Compose-TW-Enablement.sh | sh
