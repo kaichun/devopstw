@@ -24,4 +24,4 @@ services:
 #    image: kaichun/jenkins_tw
 #    container_name: jenkins_tw
 #    ports: 
-#      - "8083:8080"
+#      - "8083:8080" 
