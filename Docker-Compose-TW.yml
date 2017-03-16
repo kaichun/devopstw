@@ -1,0 +1,27 @@
+version: '2'
+services: 
+  tomcat: 
+    image: kaichun/tomcat_tw
+    depends_on: nginx
+    container_name: tomcat_tw
+    volumes:
+      - /usr/tw/app:/usr/local/tomcat/webapps
+    ports: 
+      - "8080:8080"
+  nginx:
+    image: kaichun/nginx_tw
+    container_name: nginx_tw
+    volumes:
+      - /usr/tw/asset:usr/share/nginx/html
+    ports:
+      - "8081:80"
+#  nexus: 
+#    image: kaichun/nexus_tw
+#    container_name: nexus_tw
+#    ports: 
+#      - "8082:8080" 
+#  jenkins: 
+#    image: kaichun/jenkins_tw
+#    container_name: jenkins_tw
+#    ports: 
+#      - "8083:8080"
